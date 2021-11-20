@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tablas en html</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		h2{
+			background-color:#5c5489;
+			padding: 5px;
+			color: white;
+			text-align: center;
+		}
+		h5{
+			padding:20px;
+		}
+		table{
+			border-collapse: collapse;
+			align-content: center
+			padding-top: 20px;
+			padding-left: 20px;
+			margin: 0 auto;
+		}
+		section{
+			background-color: #fabc28;
+			widht: 1024px;
+			padding-bottom: 50px;
+		}
+		nav{
+			background-color: #151723;
+		}
+		header{
+			padding: 20px;
+			text-align: center;
+			background-color: #ec5489;
+			margin: 0 auto;
+		}
+		footer{
+			background-color: #E2d5d0;
+			text-align: center;
+			color:white;
+		}
+		th,td{
+			padding: 10px;
+			
+		}
+		th{
+			text-align: left;
+			background-color: #2a2642;
+			color: #e2d5d0;
+		}
+		td{
+			background-color: #E2D520;
+		}
+		#t02 th, t02 td{
+			padding: 15px;
+			text-align: left;
+		}
+		#t02 th{
+			background-color: aqua;
+		}
+		#t02 tr:nth-child(even){
+			background-color: antiquewhite;
+		}
+		#t02 tr:nth-child(odd){
+			background-color: coral;
+		}
+		.tabla th{
+			background-color: #E993EB;
+		}
+		.tabla td{
+			background-color: #F9DDF3;
+		}
+		.tabla tr:hover{
+			background-color: #84009B;
+		}
+			nav {
+			height: 50px;
+			margin: 0 auto;
+			width: 920px;
+			padding-top: 1px;
+			}
+			nav a{
+				color:white;
+				text-decoration: none;
+			}
+			nav a:hover{
+				color:black;
+				font-weight: bolder;
+				font-size: large;
+			}
+			nav ul{
+				list-style: none;
+				text-align: center;
+			}
+
+			nav li{
+				display: inline;
+				text-align: center;
+				margin-left: 20px;
+			}	
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>TABLAS EN HTML</h1>
+	</header>
+	<nav>
+        <ul>
+            <a href="mi_primera_pagina.html"><li>Mi primera página</li></a>
+            <a href="tablas.html"><li>Tablas</li></a>
+            <a href="listas.html"><li>Listas</li></a>
+            <a href="index.html"><li>Imágenes</li></a>
+            <a href="audio.html"><li>Audio</li></a>
+            <a href="video.html"><li>Video</li></a>
+        </ul>
+    </nav>
+	<main>
+	 <section>
+			<h2>Tabla simple</h2>
+			<table border="1">
+				<thead>
+					<tr>
+						<th>Disco</th>
+						<th>Año</th>
+						<th>Calificación</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Taylor Swift</td>
+						<td>2006</td>
+						<td>8/10</td>
+					</tr>
+					<tr>
+						<td>Fearless</td>
+						<td>2008</td>
+						<td>8/10</td>
+					</tr>
+					<tr>
+						<td>Speak Now</td>
+						<td>2010</td>
+						<td>9/10</td>
+					</tr>
+					<tr>
+						<td>RED</td>
+						<td>2012</td>
+						<td>10/10</td>
+					</tr>
+					<tr>
+						<td>1989</td>
+						<td>2014</td>
+						<td>9/10</td>
+					</tr>
+					<tr>
+						<td>reputation</td>
+						<td>2017</td>
+						<td>20/10</td>
+					</tr>
+					<tr>
+						<td>Lover</td>
+						<td>2019</td>
+						<td>8/10</td>
+					</tr>
+					<tr>
+						<td>folklore</td>
+						<td>2020</td>
+						<td>10/10</td>
+					</tr>
+					<tr>
+						<td>evermore</td>
+						<td>2020</td>
+						<td>8/10</td>
+					</tr>
+				</tbody>
+				<tfoot></tfoot>
+			</table>
+		</section>
+     <section>
+    <h2>Tabla con celda que abarca dos columnas</h2>
+			<table border="1">
+				<thead>
+					<tr>
+						<th>Disco</th>
+						<th colspan="2">Canciones más populares</th>
+					</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Taylor Swift</td>
+					<td>Our Song</td>
+					<td>Tim McGraw</td>
+				</tr>
+				<tr>
+					<td>Fearless</td>
+					<td>Love Story</td>
+					<td>You Belong With Me</td>
+				</tr>
+				<tr>
+					<td>Speak Now</td>
+					<td>Mine</td>
+					<td>Mean</td>
+				</tr>
+				<tr>
+					<td>Red</td>
+					<td>We Are Never Ever Getting Back Together</td>
+					<td>I Knew You Were Trouble</td>
+				</tr>
+				<tr>
+					<td>1989</td>
+					<td>Shake it off</td>
+					<td>Blank Space</td>
+				</tr>
+				<tr>
+					<td>reputation</td>
+					<td>Look What You Made Me Do</td>
+					<td>Delicate</td>
+				</tr>
+				<tr>
+					<td>Lover</td>
+					<td>ME!</td>
+					<td>You Need To Calm Down</td>
+				</tr>
+				<tr>
+					<td>folklore</td>
+					<td>cardigan</td>
+					<td>august</td>
+				</tr>
+				<tr>
+					<td>evermore</td>
+					<td>willow</td>
+					<td>champagne problems</td>
+				</tr>
+				</tbody>
+				<tfoot></tfoot>
+			</table>
+	  </section>
+	 <section>
+		  <table id="t02" border="1">
+		    <thead>
+		      <tr>
+		        <th>Disco</th>
+		        <th>Año</th>
+		        <th>Calificación</th>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+		        <td>Taylor Swift</td>
+		        <td>2006</td>
+		        <td>8/10</td>
+	          </tr>
+		      <tr>
+		        <td>Fearless</td>
+		        <td>2008</td>
+		        <td>8/10</td>
+	          </tr>
+		      <tr>
+		        <td>Speak Now</td>
+		        <td>2010</td>
+		        <td>9/10</td>
+	          </tr>
+		      <tr>
+		        <td>RED</td>
+		        <td>2012</td>
+		        <td>10/10</td>
+	          </tr>
+		      <tr>
+		        <td>1989</td>
+		        <td>2014</td>
+		        <td>9/10</td>
+	          </tr>
+		      <tr>
+		        <td>reputation</td>
+		        <td>2017</td>
+		        <td>20/10</td>
+	          </tr>
+		      <tr>
+		        <td>Lover</td>
+		        <td>2019</td>
+		        <td>8/10</td>
+	          </tr>
+		      <tr>
+		        <td>folklore</td>
+		        <td>2020</td>
+		        <td>10/10</td>
+	          </tr>
+		      <tr>
+		        <td>evermore</td>
+		        <td>2020</td>
+		        <td>8/10</td>
+	          </tr>
+	        </tbody>
+		    <tfoot>
+	        </tfoot>
+	      </table>
+	  </section>
+	 <section>
+		 <table class="tabla" width="500" border="1">
+  <tbody>
+    <tr>
+      <th>nombre</th>
+      <th>edad</th>
+      <th>numero</th>
+      <th>deporte</th>
+    </tr>
+    <tr>
+      <td>Mía</td>
+      <td>15</td>
+      <td>134752</td>
+      <td>natación</td>
+    </tr>
+    <tr>
+      <td>Jocelyn</td>
+      <td>20</td>
+      <td>313247</td>
+      <td>natación</td>
+    </tr>
+    <tr>
+      <td>Michelle</td>
+      <td>22</td>
+      <td>938576</td>
+      <td>natación</td>
+    </tr>
+    <tr>
+      <td>Karla</td>
+      <td>19</td>
+      <td>241875</td>
+      <td>natación</td>
+    </tr>
+  </tbody>
+</table>
+
+	 </section>
+	</main>
+	<footer>
+		<h5>Elaborado por Shaina Melissa Calderón Barrera</h5>
+	</footer>
+</body>
+</html>

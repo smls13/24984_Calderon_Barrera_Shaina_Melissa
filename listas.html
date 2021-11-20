@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Listas</title>
+	<style type="text/css">
+		header{
+			width: 1024px;
+			height: 50px;
+			background-color: #DB35E3;
+			margin: 0 auto;
+			text-align: center;
+		}	
+		nav{	
+			background-color: #FF7BF4;
+		}
+		
+		main{
+			background-color: #8E59D3;
+			width: 1004px;
+			margin: 0 auto;
+			padding: 10px;
+		}
+		
+		section{
+			margin: 0 auto;
+			margin-top: 10px;
+			padding: 10px;
+			padding-bottom: 50px;
+			background-color: #FFFFFF;
+			border:dashed;
+			border-color: #FF35C9;
+			width: 900px;
+		}
+		h2{
+			background-color: #FFFFFF;
+		}
+		footer{
+			width: 1024px;
+			height: 40px;
+			background-color: #CC67FF;
+			margin: 0 auto;
+			text-align: center;
+		}
+		body{
+			background-color: #860084;
+		}
+		nav {
+			height: 50px;
+			margin: 0 auto;
+			width: 920px;
+			padding-top: 1px;
+		}
+		nav a{
+			color:white;
+			text-decoration: none;
+		}
+		nav a:hover{
+			color:black;
+			font-weight: bolder;
+			font-size: large;
+		}
+		nav ul{
+			list-style: none;
+			text-align: center;
+		}
+    
+		nav li{
+			display: inline;
+			text-align: center;
+			margin-left: 20px;
+		}
+	</style>
+</head>
+
+<body>
+		<header>
+			<h1>Listas en html</h1>
+		</header>
+		<nav>
+        <ul>
+            <a href="mi_primera_pagina.html"><li>Mi primera página</li></a>
+            <a href="tablas.html"><li>Tablas</li></a>
+            <a href="listas.html"><li>Listas</li></a>
+            <a href="index.html"><li>Imágenes</li></a>
+            <a href="audio.html"><li>Audio</li></a>
+            <a href="video.html"><li>Video</li></a>
+        </ul>
+    </nav>
+		<main>
+			<section>
+				<h2>Lista desordenada con viñeta</h2>
+				<ul>
+					<li>Libreta profesional</li>
+					<li>Tijeras</li>
+					<li>Pegamento</li>
+					<li>Colores</li>
+					<li>Lapices</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Lista ordenada o con viñeta numerada</h2>
+				<ol>
+					<li>reputation</li>
+					<li>red</li>
+					<li>speak now</li>
+					<li>folklore</li>
+					<li>1989</li>
+					<li>taylor swift</li>
+					<li>evermore</li>
+					<li>lover</li>
+					<li>fearless</li>
+				</ol>
+			</section>
+			<section>
+				<h2>Lista mixta</h2>
+				<ol>
+					<li>España</li>
+					<li>China</li>
+					<li>México</li>
+						<ul>
+							<li>Puebla</li>
+							<li>Mérida</li>
+							<li>Veracruz</li>
+						</ul>
+					<li>Estados Unidos</li>
+					<li>Italia</li>
+						<ul>
+							<li>Roma</li>
+							<li>Florencia</li>
+						</ul>
+					<li>Francia</li>
+				</ol>
+			</section>
+			<section>
+				<h2>Lista de descripción</h2>
+				<dl>
+					<dt>Usabilidad</dt>
+					<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quam deserunt cumque blanditiis animi quasi, optio alias dolorum fuga harum.</dd>
+					<dt>Accesibilidad</dt>
+					<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sequi ab aspernatur, blanditiis accusantium corporis deleniti expedita, commodi obcaecati est similique laudantium error explicabo dolores vel porro beatae quam in.</dd>
+					<dt>Accesibilidad</dt>
+					<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium nihil consequuntur recusandae inventore autem ratione at, fugit iusto facere, omnis eaque, quibusdam odio dolor! Optio sit temporibus laborum nam cupiditate sint deserunt accusamus asperiores accusantium maiores impedit placeat natus est unde necessitatibus voluptates, deleniti, libero nobis amet a aspernatur distinctio.</dd>
+				</dl>
+			</section>
+			<section>
+				<h2>Listas con cambio de viñetas</h2>
+
+				<ul style="list-style-type:circle;">
+					<li>Reptiles
+						<ul style="list-style-type:disc;">
+							<li>Cocodrilo</li>
+							<li>Serpiente</li>
+							<li>Iguana</li>
+						</ul>
+					</li>
+
+					<li>Mamíferos
+					<ul style="list-style-type:upper-roman;">
+							<li>Ballena</li>
+							<li>Vaca</li>
+							<li>Perro</li>
+						</ul>
+					</li>
+
+					<li>Anfibios
+						<ol style="list-style-type:lower-roman;">
+							<li>Rana</li>
+							<li>Sapo</li>
+							<li>Ajolote</li>
+						</ol>
+					</li>
+
+					<li>Caninos
+						<ul style="list-style-image: url('../img/trabajo-en-progreso.png');">
+							<li>Labrador</li>
+							<li>Poodle</li>
+							<li>Jul</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+		</main>
+		<footer>Hecho por Shaina Melissa Calderón Barrera</footer>
+</body>
+</html>
